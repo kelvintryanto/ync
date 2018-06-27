@@ -99,3 +99,36 @@ D:\Kerja\Project YnC Worship Night\YnC Worship Night\YnC Worship Night Source Co
 D:\Kerja\Project YnC Worship Night\YnC Worship Night\YnC Worship Night Source Code & DB\YnC Worship Night Source Code & DB\YnCWorshipNight - Copy\OnlineRegistration_v2\obj\Debug\OnlineRegistration_v2.csprojResolveAssemblyReference.cache
 D:\Kerja\Project YnC Worship Night\YnC Worship Night\YnC Worship Night Source Code & DB\YnC Worship Night Source Code & DB\YnCWorshipNight - Copy\OnlineRegistration_v2\obj\Debug\OnlineRegistration_v2.dll
 D:\Kerja\Project YnC Worship Night\YnC Worship Night\YnC Worship Night Source Code & DB\YnC Worship Night Source Code & DB\YnCWorshipNight - Copy\OnlineRegistration_v2\obj\Debug\OnlineRegistration_v2.pdb
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\OnlineRegistration_v2.dll.config
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\OnlineRegistration_v2.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\OnlineRegistration_v2.pdb
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Antlr3.Runtime.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\AspNet.ScriptManager.jQuery.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.AspNet.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.Core.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.OAuth.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.OpenId.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\EntityFramework.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Microsoft.ScriptManager.WebForms.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Microsoft.Web.Infrastructure.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\System.Web.Optimization.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\System.Web.Providers.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\WebGrease.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\EntityFramework.xml
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.Core.xml
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.OAuth.xml
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.OpenId.xml
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\DotNetOpenAuth.AspNet.xml
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\obj\Debug\OnlineRegistration_v2.csprojResolveAssemblyReference.cache
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\obj\Debug\OnlineRegistration_v2.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\obj\Debug\OnlineRegistration_v2.pdb
