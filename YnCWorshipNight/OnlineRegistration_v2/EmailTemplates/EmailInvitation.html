@@ -4,55 +4,79 @@
     <title></title>
     <meta charset="utf-8" />
     <style>
-        table, th, td {
+        @import url('https://rsms.me/inter/inter-ui.css');
+
+        table {
+            background-color: #ffafa2;
+        }
+
+        body {
+            color: #0d2481;
+            font-family: "inter-ui", sans-serif;
+        }
+
+        .BG {
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .ticket-number {
+            margin-top: 0px;
+            margin-bottom: 0px;
             border: 1px solid black;
+            margin-left: 25%;
+            margin-right: 25%;
+            size: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .cantwait {
+            size: 2vw;
+        }
+
+        .number {
+            text-align: left;
+            font-size: 75px;
         }
     </style>
 </head>
 <body>
-    <br />
-    <table width="50%">
+    <!-- ini adalah mula pembuatan email template -->
+    <table width="35%" style="border: 1px solid black;">
         <tr>
-            <td align="center" style="background-color:yellow">
-                <span style="font-size:25px;">   Email Invitation  </span>
+            <td colspan="3" class="BG" align="center">
+                <img src="/Images/rejoice_logo.svg" alt="Trulli" width="25%">
+                <br />
+                <h1 style="color: #0d2481">SELAMAT</h1>
+                <b>Berikut ini adalah kode yang perlu kamu bawa</b>
+                <br />
+                <b>pada tanggal 15 September 2018:</b>
+                <br />
+                <br />
+                <p class="ticket-number">[TicketNumber]</p>
+                <br />
+                <p style="font-size: 35px; margin-bottom: 0px; margin-top: 0px;"><b>CAN'T WAIT TO SEE YOU!</b></p>
+                <br />
+                <b>sambil menunggu tanggal 15 September 2018</b>
+                <br />
+                <b>ini hal-hal yang bisa kamu lakukan:</b>
                 <br />
             </td>
-
         </tr>
 
-        <tr align="center">
-            <td>
-                <br />
-                <br />
-                Dear <strong>[FullName]</strong>,
-                <br />
-                <br />
-                Thank you for registering with us!
-                <br />
-                Here is your ticket number:
-                <br/>
-                <h2>
-                    [TicketNumber]
-                </h2>
-                <br/>               
-            </td>
-        </tr>
-        <tr>
-            <td align="center" style="background-color:yellow">
-                <br />
-                <br />
-                <span style="font-size:15px;">   Regards,   </span>
-                <br />
-                <span style="font-size:20px;">   Panitia YnC Worship Night 2018    </span>
-                <br />
-                <br />
-            </td>
-
+        <tr class="number">
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
         </tr>
 
+        <tr style="font-size: 15px;">
+            <td style="padding-right: 10px"><b>ajak teman-temanmu yang lain</b></td>
+            <td style="padding-right: 10px"><b>Doakan supaya kegiatanmu tanggal 15 September dilancarkan</b></td>
+            <td style="padding-right: 10px"><b>Follow akun IG @rejoice_ync untuk update!</b></td>
         </tr>
-
-
     </table>
 </body>
 </html>  

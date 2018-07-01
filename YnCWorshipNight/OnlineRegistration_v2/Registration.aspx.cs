@@ -66,7 +66,8 @@ namespace OnlineRegistration_v2
             Boolean emailIsSSL = Convert.ToBoolean(ConfigurationManager.AppSettings["IsSSL"]);
 
             //Fetching Email Body Text from EmailTemplate File.  
-            string FilePath = "D:\\Others\\YnC Project\\YnCWorshipNight - Copy\\OnlineRegistration_v2\\EmailTemplates\\EmailInvitation.html";
+            string FilePath = "D:\\YnC\\YnCWorshipNight\\OnlineRegistration_v2\\EmailTemplates\\EmailInvitation.html";
+            //string FilePath = "D:\\Others\\YnC Project\\YnCWorshipNight - Copy\\OnlineRegistration_v2\\EmailTemplates\\EmailInvitation.html";
             StreamReader str = new StreamReader(FilePath);
             string MailText = str.ReadToEnd();
             str.Close();

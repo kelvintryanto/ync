@@ -1,0 +1,46 @@
+D:\Others\YnC Project\YnCWorshipNight - GITHUB
+D:\Others\YnC Project\YnC
+
+https://github.com/kelvintryanto/ync.git
+git@github.com:kelvintryanto/ync.git
+
+git clone https://github.com/kelvintryanto/ync.git D:\YnC
+
+git remote set-url origin git@github.com:kelvintryanto/ync.git
+git push -u https://github.com/kelvintryanto/ync.git master
+D:\Others\YnC Project\YnCWorshipNight - GITHUB>
+git clone https://github.com/kelvintryanto/ync.git D:\Others\YnC Project\YnCWorshipNight - GITHUB
+
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+<header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <a runat="server" href="~/">your logo here</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+<footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; <%: DateTime.Now.Year %> - Youth in Christ Web Application</p>
+            </div>
+        </div>
+    </footer>
+
