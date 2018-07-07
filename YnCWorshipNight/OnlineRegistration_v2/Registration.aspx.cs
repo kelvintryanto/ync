@@ -39,16 +39,20 @@ namespace OnlineRegistration_v2
                 
             if (ddlAsalParoki.SelectedValue == "0")
             {
+                //othersDiv.Visible = false;
                 asalparoki = "Santa Monika";
             }
             else
             {
-                asalparoki = "Bukan Santa Monika";
+                //othersDiv.Visible = true;
+                asalparoki = "Others - " + txtOthers.Text;
             }
 
             try
             {
                 Int32 returnvalue = doInsertRegis(TicketNumber, txtFullname.Text, Convert.ToDateTime(txtDOB.Text), txtMobilePhone.Text, txtEmailAddress.Text, txtHomeAddress.Text, txtLineID.Text, gender, asalparoki);
+                SendingEmail(TicketNumber, txtFullname.Text, txtEmailAddress.Text.ToString());
+
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Register SUCCESS !')", true);
             }
             catch (Exception ex)
@@ -56,8 +60,37 @@ namespace OnlineRegistration_v2
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Register FAILED !')", true);
             }
 
-            #region send_email
+            
 
+        }
+
+        protected void ddlAsalParoki_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ddlAsalParoki.SelectedItem.Value == "0")
+            {
+                othersDiv.Visible = false;
+            }
+            else
+            {
+                othersDiv.Visible = true;
+            }
+
+            //string message = ddlFruits.SelectedItem.Text + " - " + ddlFruits.SelectedItem.Value;
+            //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" + message + "');", true);
+        }
+
+        //private static Random random = new Random();
+        public static string GenerateTicketNumber(int length)
+        {
+            Random random = new Random();
+
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
+        public void SendingEmail(String _ticketnumber, String _fullname, String _email)
+        {
             //Fetching Settings from WEB.CONFIG file.  
             string emailSender = ConfigurationManager.AppSettings["emailsender"].ToString();
             string emailSenderPassword = ConfigurationManager.AppSettings["password"].ToString();
@@ -66,15 +99,15 @@ namespace OnlineRegistration_v2
             Boolean emailIsSSL = Convert.ToBoolean(ConfigurationManager.AppSettings["IsSSL"]);
 
             //Fetching Email Body Text from EmailTemplate File.  
-            string FilePath = "D:\\YnC\\YnCWorshipNight\\OnlineRegistration_v2\\EmailTemplates\\EmailInvitation.html";
-            //string FilePath = "D:\\Others\\YnC Project\\YnCWorshipNight - Copy\\OnlineRegistration_v2\\EmailTemplates\\EmailInvitation.html";
+            string FilePath = ConfigurationManager.AppSettings["filepath"].ToString();
+            //string FilePath = "D:\\YnC\\YnCWorshipNight\\OnlineRegistration_v2\\EmailTemplates\\EmailInvitation.html";
             StreamReader str = new StreamReader(FilePath);
             string MailText = str.ReadToEnd();
             str.Close();
 
             //Repalce [newusername] = signup user name   
-            MailText = MailText.Replace("[FullName]", txtFullname.Text.Trim());
-            MailText = MailText.Replace("[TicketNumber]", TicketNumber.Trim());
+            MailText = MailText.Replace("[FullName]", _fullname.Trim());
+            MailText = MailText.Replace("[TicketNumber]", _ticketnumber.Trim());
 
             string subject = "YnC Worship Night - Registration Success!!";
 
@@ -88,7 +121,7 @@ namespace OnlineRegistration_v2
             _mailmsg.From = new MailAddress(emailSender);
 
             //Set To Email ID  
-            _mailmsg.To.Add(txtEmailAddress.Text.ToString());
+            _mailmsg.To.Add(_email);
 
             //Set Subject  
             _mailmsg.Subject = subject;
@@ -113,37 +146,7 @@ namespace OnlineRegistration_v2
             _smtp.Credentials = _network;
 
             //Send Method will send your MailMessage create above.  
-            _smtp.Send(_mailmsg);  
-
-            #endregion
-
-
-            //string connetionString = null;
-            //SqlConnection cnn ;
-            //connetionString = "Data Source=localhost;Initial Catalog=YnCDB;User ID=sa;Password=Password*7";
-            //cnn = new SqlConnection(connetionString);
-            //try
-            //{
-            //    cnn.Open();
-            //    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Connection Open !')", true);
-            //    //MessageBox.Show ("Connection Open ! ");
-            //    cnn.Close();
-            //}
-            //catch (Exception ex)
-            //{
-            //    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Can not open connection !')", true);
-            //    //MessageBox.Show("Can not open connection ! ");
-            //}
-        }
-
-        //private static Random random = new Random();
-        public static string GenerateTicketNumber(int length)
-        {
-            Random random = new Random();
-
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            return new string(Enumerable.Repeat(chars, length)
-              .Select(s => s[random.Next(s.Length)]).ToArray());
+            _smtp.Send(_mailmsg);
         }
 
         #region Private Function
