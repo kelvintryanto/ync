@@ -85,7 +85,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2018 12:44:37</publishTime>
     </File>
     <File Include="bin/OnlineRegistration_v2.dll">
-      <publishTime>07/07/2018 16:12:17</publishTime>
+      <publishTime>07/08/2018 00:17:41</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
       <publishTime>06/27/2018 12:44:37</publishTime>
@@ -330,6 +330,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="EmailTemplates/EmailInvitation.html">
       <publishTime>07/02/2018 00:12:45</publishTime>
     </File>
+    <File Include="FailedResponse.aspx">
+      <publishTime>07/07/2018 23:43:45</publishTime>
+    </File>
     <File Include="favicon.ico">
       <publishTime>06/27/2018 12:44:37</publishTime>
     </File>
@@ -410,6 +413,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Registration.aspx">
       <publishTime>07/07/2018 16:06:53</publishTime>
+    </File>
+    <File Include="Response.aspx">
+      <publishTime>07/07/2018 23:33:37</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>06/27/2018 12:44:36</publishTime>
@@ -526,7 +532,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2018 12:44:36</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>06/27/2018 13:37:49</publishTime>
+      <publishTime>07/08/2018 00:14:19</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
       <publishTime>06/27/2018 12:44:36</publishTime>

@@ -80,9 +80,14 @@
 					        <asp:Label runat="server">Email</asp:Label>
 				        </div>
 				        <div class="col-md-5">
-					        <asp:TextBox runat="server" ID="txtEmailAddress" TextMode="Email" />
+					        <asp:TextBox runat="server" ID="txtEmailAddress"  />
 					        <asp:RequiredFieldValidator runat="server" ControlToValidate="txtEmailAddress"
-					        CssClass="field-validation-error" ErrorMessage="Email wajib diisi!" />
+					            CssClass="field-validation-error" ErrorMessage="Email wajib diisi!" SetFocusOnError="True" />
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
+                                ErrorMessage="Invalid Email Format!" ControlToValidate="txtEmailAddress"
+                                SetFocusOnError="True"
+                                ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
+                            </asp:RegularExpressionValidator>
 				        </div>
 			        </div>
 

@@ -53,11 +53,13 @@ namespace OnlineRegistration_v2
                 Int32 returnvalue = doInsertRegis(TicketNumber, txtFullname.Text, Convert.ToDateTime(txtDOB.Text), txtMobilePhone.Text, txtEmailAddress.Text, txtHomeAddress.Text, txtLineID.Text, gender, asalparoki);
                 SendingEmail(TicketNumber, txtFullname.Text, txtEmailAddress.Text.ToString());
 
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Register SUCCESS !')", true);
+                Response.Redirect("Response.aspx", false);
+                //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Register SUCCESS !')", true);
             }
             catch (Exception ex)
             {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Register FAILED !')", true);
+                Response.Redirect("FailedResponse.aspx", false);
+                //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Register FAILED !')", true);
             }
 
             
@@ -74,9 +76,6 @@ namespace OnlineRegistration_v2
             {
                 othersDiv.Visible = true;
             }
-
-            //string message = ddlFruits.SelectedItem.Text + " - " + ddlFruits.SelectedItem.Value;
-            //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" + message + "');", true);
         }
 
         //private static Random random = new Random();
