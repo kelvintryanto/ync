@@ -19,18 +19,28 @@
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
            <%-- Start Logo Column 1 Left--%>
-	       <div class="column left">
-               <h1>Try This Box</h1>
+	       <div class="column red" style="vertical-align:middle; text-align: center; ">
+               <div class="paddingdalam" style="padding-top:35%">
+                   <img src="images\rejoice_logo.svg"  width="50%" alt="Alternate Text" />
+               </div>
+                
 	       </div>
 
             <%-- Start Column 2 Right --%>
-           <div class="column right">
+           <div class="column blue">
 		        <%-- Start Form Horizontal--%>
-		        <div class="form-horizontal">
+		        <div class="form-horizontal paddingdalam">
+                    <%--judul--%>
+                    <div style="text-align: center">
+                        <h1>Online Registration</h1>
+                        <asp:Label runat="server">* Wajib Diisi</asp:Label>
+                    </div>
+                    <br />
+
 			        <%-- Nama Lengkap --%>
 			        <div class="form-group">
 				        <div class="col-md-3">
-					        <asp:Label runat="server">Nama Lengkap</asp:Label>
+					        <asp:Label runat="server">Nama Lengkap*</asp:Label>
 				        </div>
 				        <div class="col-md-5">
 					        <asp:TextBox runat="server" ID="txtFullname" />
@@ -42,7 +52,7 @@
 			        <%-- Tanggal Lahir --%>
 			        <div class="form-group">
 				        <div class="col-md-3">
-					        <asp:Label runat="server">Tanggal Lahir</asp:Label>
+					        <asp:Label runat="server">Tanggal Lahir*</asp:Label>
 				        </div>
 				        <div class="col-md-5">
 					        <asp:TextBox runat="server" ID="txtDOB" />
@@ -60,7 +70,7 @@
 			        <%-- Nomor HP --%>
 			        <div class="form-group">
 				        <div class="col-md-3">
-					        <asp:Label runat="server">Nomor HP</asp:Label>
+					        <asp:Label runat="server">Nomor HP*</asp:Label>
 				        </div>
 				        <div class="col-md-5">
 					        <asp:TextBox runat="server" ID="txtMobilePhone" />
@@ -77,24 +87,19 @@
 			        <%-- Email --%>
 			        <div class="form-group">
 				        <div class="col-md-3">
-					        <asp:Label runat="server">Email</asp:Label>
+					        <asp:Label runat="server">Email*</asp:Label>
 				        </div>
 				        <div class="col-md-5">
-					        <asp:TextBox runat="server" ID="txtEmailAddress"  />
+					        <asp:TextBox runat="server" ID="txtEmailAddress" TextMode="Email" />
 					        <asp:RequiredFieldValidator runat="server" ControlToValidate="txtEmailAddress"
-					            CssClass="field-validation-error" ErrorMessage="Email wajib diisi!" SetFocusOnError="True" />
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
-                                ErrorMessage="Invalid Email Format!" ControlToValidate="txtEmailAddress"
-                                SetFocusOnError="True"
-                                ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
-                            </asp:RegularExpressionValidator>
+					        CssClass="field-validation-error" ErrorMessage="Email wajib diisi!" />
 				        </div>
 			        </div>
 
 			        <%-- Alamat --%>
 			        <div class="form-group">
 				        <div class="col-md-3">
-					        <asp:Label runat="server">Alamat</asp:Label>
+					        <asp:Label runat="server">Alamat*</asp:Label>
 				        </div>
 				        <div class="col-md-5">
 					        <asp:TextBox runat="server" ID="txtHomeAddress" />
@@ -110,8 +115,6 @@
 				        </div>
 				        <div class="col-md-5">
 					        <asp:TextBox runat="server" ID="txtLineID" />
-					        <asp:RequiredFieldValidator runat="server" ControlToValidate="txtLineID"
-					        CssClass="field-validation-error" ErrorMessage="Line ID wajib diisi!" />
 				        </div>
 			        </div>
 
@@ -145,7 +148,7 @@
 	                </div>
                 </div>
 
-               <div class="input-group-btn">
+               <div class="input-group-btn" style="padding-left: 15px; text-align:center">
                     <asp:Button runat="server" Text="Register" CssClass="btn btn-primary" OnClick="button1_Click" />
                 </div>
                <%-- End of Form Horizontal --%>

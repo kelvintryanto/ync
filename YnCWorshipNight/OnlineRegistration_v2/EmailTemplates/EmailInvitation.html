@@ -1,64 +1,71 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title></title>
-    <meta charset="utf-8" />
-    <style>
-    @font-face {
-        font-family: "Leixo";
-        src: url("LEIXO-DEMO.ttf");
-    }
+    <meta charset="utf-8" />    
+</head>
+<body style="color:#0d2481;
+        font-family: "inter-ui", sans-serif;">
+    <!-- ini adalah mula pembuatan email template -->
+    <table width="35%" style="border: 1px solid black; padding: 10px; background-color: #ffafa2;">
+        <tr>
+            <td align="left">
+                
+            </td>
+            <td>
+                <img src="http://www.pdompkkync.com/EmailTemplates/images/rejoice_logo.png" alt="Rejoice" style="width: 100%;"> 
+            </td>
+            <td align="right" style="vertical-align: top;">
+                <img src="http://www.pdompkkync.com/EmailTemplates/images/omkMonikaLogo.png" style="margin-top: 0;
+        padding: 0;
+        width: 25%;"><img src="http://www.pdompkkync.com/EmailTemplates/images/YnCLogo.png" style="margin-top: 0;
+        padding: 0;
+        width: 24%;">
+            </td>
+            
+            
+        </tr>
 
-    @import url('https://rsms.me/inter/inter-ui.css');
-
-    table {
-        background-color: #ffafa2;
-    }
-
-    body {
-        color:#0d2481;
-        font-family: "inter-ui", sans-serif;
-        font-weight: 150;
-    }
-
-    .BG {
-        text-align: center;
+        <tr>
+            <td colspan="3" style="text-align: center;
         width: 50%;
-        padding: 10px;
-    }
-
-    .ticket-number { 
-        margin-top: 0px; 
+        padding: 10px;" align="center">
+             
+             <img src="http://www.pdompkkync.com/EmailTemplates/images/Selamat.png" width="50%">
+             <h2 style="color: #0d2481; margin-top: 5px;">[FullName]</h2>
+             <p style="font-weight: 400; color: #0d2481">Berikut ini adalah kode yang perlu kamu bawa</p>
+             <p style="font-weight: 400; color: #0d2481">pada tanggal 15 September 2018:</p>
+                <p style="margin-top: 0px; 
         margin-bottom: 0px;
         border: 1px solid black;
         margin-left: 25%;
         margin-right: 25%;
         size: 100%;
+        font-size: 20px;
         padding-top: 10px;
-        padding-bottom: 10px;
-        font-weight: bold;
-    }
-
-    .cantwait {
-        font-size: 35px; 
+        font-weight: bold; color: #0d2481">[TicketNumber]</p>
+                <br>    
+                <p style="font-size: 30px; 
         margin-bottom: 0px; 
-        margin-top: 0px;
-    }
+        margin-top: 0px; color: #0d2481"><b>CAN'T WAIT TO SEE YOU!</b></p>
+                <p style="font-weight: 400; color: #0d2481">sambil menunggu tanggal 15 September 2018</p>
+                <p style="font-weight: 400; color: #0d2481">ini hal-hal yang bisa kamu lakukan:</p>
+            </td>
+        </tr>
 
-    .number {
-        text-align: center; 
-        width: 33.33%;
-    }
+        <tr style="text-align: center; 
+        width: 33.33%;">
+            <th><img src="http://www.pdompkkync.com/EmailTemplates/images/icons8-instagram-96.png" width="72px"></th>
+            <th><img src="http://www.pdompkkync.com/EmailTemplates/images/icons8-user-groups-96.png" width="72px"></th>
+            <th><img src="http://www.pdompkkync.com/EmailTemplates/images/icons8-ticket-purchase-96.png" width="72px"></th>
+        </tr>
 
-    .selamat{
-        font-size: 35px;
-        font-family: "leixo",sans-serif;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .followBtn{
-        background-color: #0d2481;
+        <tr style="font-size: 15px;">
+            <td style="font-weight: 400; width: 33.33%; 
+        vertical-align: top;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center; color: #0d2481">Follow Instagram @rejoice_ync<br/><br/><a href="https://www.instagram.com/rejoice_ync/"><button style="background-color: #0d2481;
         width: 75%;
         color: #fff;
         border: none;
@@ -66,105 +73,17 @@
         padding: 8px 0px;
         margin-right: 0px;
         margin-left: 0px;
-        font-weight: bold;
-    }
-
-    .tdStyle {
-        width: 33.33%; 
+        font-weight: bold;">Follow!</button></a><br/></td>
+            <td style="font-weight: 400; width: 33.33%; 
         vertical-align: top;
         padding-right: 10px;
         padding-left: 10px;
-        text-align: center;
-    }
-
-    .LogoOMK{
-        margin-top: 0;
-        padding: 0;
-        width: 25%;     
-    }
-
-    .LogoYnC{
-        margin-top: 0;
-        padding: 0;
-        width: 24%;
-    }
-
-    .imageLogo{
-        width: 28%;
-    }
-
-    .imageLogoatas{
-        width: 100%;
-    }
-
-    @media all and (max-width: 1690px) { 
-        .imageLogo{width: 30%;} 
-    }
-
-    @media all and (max-width: 1280px) { 
-        .imageLogo{width: 40%;} 
-    }
-
-    @media all and (max-width: 980px) { 
-        .imageLogo{width: 50%;} 
-    }
-
-    @media all and (max-width: 736px) { 
-        .imageLogo{width: 45%;} 
-    }
-
-    @media all and (max-width: 480px) { 
-        .imageLogo{width: 100%;} 
-    }
- 
-}
-
-</style>
-</head>
-<body>
-    <!-- ini adalah mula pembuatan email template -->
-    <table width="35%" style="border: 1px solid black; padding: 10px;">
-        <tr>
-            <td align="left">
-                
-            </td>
-            <td>
-                <img src="images/rejoice_logo.svg" alt="Rejoice" class="imageLogoatas"> 
-            </td>
-            <td align="right" style="vertical-align: top;">
-                <img src="images/omkMonikaLogo.png" class="LogoOMK"><img src="images/YnCLogo.png" class="LogoYnC">
-            </td>
-            
-            
-        </tr>
-
-        <tr>
-            <td colspan="3" class="BG" align="center">
-             <!-- <img src="rejoice_logo.svg" alt="Rejoice" class="imageLogo"> 
-             <br />
-             <br /> -->
-             <p class="selamat">SELAMAT</p>
-             <h2>[FullName]</h2>
-             <p style="font-weight: 400;">Berikut ini adalah kode yang perlu kamu bawa</p>
-             <p style="font-weight: 400;">pada tanggal 15 September 2018:</p>
-                <p class="ticket-number">[TicketNumber]</p>
-                <br>    
-                <p class="cantwait"><b>CAN'T WAIT TO SEE YOU!</b></p>
-                <p style="font-weight: 400;">sambil menunggu tanggal 15 September 2018</p>
-                <p style="font-weight: 400;">ini hal-hal yang bisa kamu lakukan:</p>
-            </td>
-        </tr>
-
-        <tr class="number">
-            <th><img src="images/icons8-instagram.svg" width="72px"></th>
-            <th><img src="images/icons8-user-groups-96.png" width="72px"></th>
-            <th><img src="images/icons8-ticket-purchase-96.png" width="72px"></th>
-        </tr>
-
-        <tr style="font-size: 15px;">
-            <td class="tdStyle" style="font-weight: 400;">Follow Instagram @rejoice_ync<br/><br/><a href="https://www.instagram.com/rejoice_ync/"><button class="followBtn">Follow!</button></a><br/></td>
-            <td class="tdStyle" style="font-weight: 400;">Ajak teman-teman kamu!</td>
-            <td class="tdStyle" style="font-weight: 400;">Pastikan membawa<br />e-ticket saat melakukan registrasi</td>
+        text-align: center; color: #0d2481">Ajak teman-teman kamu!</td>
+            <td style="font-weight: 400; width: 33.33%; 
+        vertical-align: top;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center; color: #0d2481">Pastikan membawa<br />e-ticket saat melakukan registrasi</td>
         </tr>
     </table>
 </body>
