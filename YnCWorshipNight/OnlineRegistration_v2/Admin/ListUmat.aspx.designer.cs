@@ -13,13 +13,13 @@ namespace OnlineRegistration_v2.Admin {
     public partial class ListUmat {
         
         /// <summary>
-        /// UpdatePanel1 control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// txt_search control.
@@ -40,13 +40,13 @@ namespace OnlineRegistration_v2.Admin {
         protected global::System.Web.UI.WebControls.Button btn_search;
         
         /// <summary>
-        /// dropdownCustomerStatus control.
+        /// lbl_searchresult control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dropdownCustomerStatus;
+        protected global::System.Web.UI.WebControls.Label lbl_searchresult;
         
         /// <summary>
         /// gvw_listData control.
@@ -56,17 +56,5 @@ namespace OnlineRegistration_v2.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvw_listData;
-        
-        /// <summary>
-        /// Master property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new OnlineRegistration_v2.SiteMaster Master {
-            get {
-                return ((OnlineRegistration_v2.SiteMaster)(base.Master));
-            }
-        }
     }
 }

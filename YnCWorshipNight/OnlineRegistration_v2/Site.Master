@@ -21,7 +21,7 @@
     <script type="text/javascript" src="Scripts/bootstrap.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
     
-    <style>
+    <style type="text/css">
         .btn-primary, .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
@@ -32,7 +32,29 @@
             /*background-color: #BD2CBB !important;*/
         }
 
-       
+       .modalBackground
+        {
+            background-color: Black !important; 
+            filter: alpha(opacity=90) !important;
+            opacity: 0.8 !important;
+        }
+        .modalPopup
+        {
+            background-color: #fff !important;
+            border: 3px solid #ccc !important;
+            padding: 10px !important;
+            width: 400px !important;
+        }
+
+        .btn-Hadir {
+            background-color: #0d2481 !important;
+            color: #FFFFFF !important;
+            padding: 5px !important;
+            border: solid 3px #FFFFFF !important;
+        }
+
+        
+
     </style>
 
     
@@ -56,6 +78,8 @@
             <asp:ScriptReference Name="MsAjaxBundle" />
             <asp:ScriptReference Name="jquery" />
             <asp:ScriptReference Name="jquery.ui.combined" />
+            <asp:ScriptReference Name="bootstrap" />
+            <asp:ScriptReference Name="respond" />
             
             <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
             <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />

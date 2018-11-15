@@ -7,7 +7,7 @@
     <title>Registrasi Berhasil</title>
 <style type="text/css">
 	BODY { color: #444444; background-color: #E5F2FF; font-family: verdana; margin: 0px; }
-	#PageOutline { text-align: center; margin-top: 300px; }
+	#PageOutline { text-align: center; margin-top: 100px; }
 	A { color: #0153A4; }
 	H1 { font-size: 16pt; margin-bottom: 4px; }
 	H2 { font-size: 14pt; margin-bottom: 4px; font-weight: normal; }
@@ -19,8 +19,11 @@
         Silakan cek <b>Email</b> untuk mendapatkan Tiket yang <b>wajib</b> dibawa pada tanggal 15 September 2018. 
        <br/>See you and God bless :)
        <br />
-       <a href="Registration.aspx">Yuk ajak teman buat daftar!</a>
-       <br />        
+       <br />
+       <h1><a href="Registration.aspx">Yuk ajak teman buat daftar!</a></h1>
+       <br />
+       <br>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/B6A2Zf6UqXU" frameborder="0" allowfullscreen></iframe>
 </div>
 </body>
 </html>

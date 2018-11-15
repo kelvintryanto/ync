@@ -31,3 +31,9 @@ D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Microsoft.AspNet.FriendlyUrls.x
 D:\YnC\YnCWorshipNight\OnlineRegistration_v2\obj\Release\OnlineRegistration_v2.csprojResolveAssemblyReference.cache
 D:\YnC\YnCWorshipNight\OnlineRegistration_v2\obj\Release\OnlineRegistration_v2.dll
 D:\YnC\YnCWorshipNight\OnlineRegistration_v2\obj\Release\OnlineRegistration_v2.pdb
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\AjaxControlToolkit.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\AspNet.ScriptManager.bootstrap.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\Antlr3.Runtime.pdb
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\ExtensionMethods.dll
+D:\YnC\YnCWorshipNight\OnlineRegistration_v2\bin\ExtensionMethods.pdb

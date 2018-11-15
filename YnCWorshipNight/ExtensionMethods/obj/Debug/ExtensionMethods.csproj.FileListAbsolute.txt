@@ -1,0 +1,5 @@
+D:\YnC\YnCWorshipNight\ExtensionMethods\obj\Debug\ExtensionMethods.csprojResolveAssemblyReference.cache
+D:\YnC\YnCWorshipNight\ExtensionMethods\bin\Debug\ExtensionMethods.dll
+D:\YnC\YnCWorshipNight\ExtensionMethods\bin\Debug\ExtensionMethods.pdb
+D:\YnC\YnCWorshipNight\ExtensionMethods\obj\Debug\ExtensionMethods.dll
+D:\YnC\YnCWorshipNight\ExtensionMethods\obj\Debug\ExtensionMethods.pdb

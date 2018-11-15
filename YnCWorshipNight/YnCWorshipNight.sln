@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineRegistration", "Onlin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineRegistration_v2", "OnlineRegistration_v2\OnlineRegistration_v2.csproj", "{CBB6B6C2-437B-4A8E-8B87-57A99519FAEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{85A4F427-C38B-44D8-B40F-0CE619FF72E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CBB6B6C2-437B-4A8E-8B87-57A99519FAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBB6B6C2-437B-4A8E-8B87-57A99519FAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBB6B6C2-437B-4A8E-8B87-57A99519FAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85A4F427-C38B-44D8-B40F-0CE619FF72E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A4F427-C38B-44D8-B40F-0CE619FF72E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A4F427-C38B-44D8-B40F-0CE619FF72E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A4F427-C38B-44D8-B40F-0CE619FF72E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

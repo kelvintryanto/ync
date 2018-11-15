@@ -50,11 +50,17 @@ namespace OnlineRegistration_v2
 
             try
             {
-                Int32 returnvalue = doInsertRegis(TicketNumber, txtFullname.Text, Convert.ToDateTime(txtDOB.Text), txtMobilePhone.Text, txtEmailAddress.Text, txtHomeAddress.Text, txtLineID.Text, gender, asalparoki);
-                SendingEmail(TicketNumber, txtFullname.Text, txtEmailAddress.Text.ToString());
-
-                Response.Redirect("Response.aspx", false);
-                //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Register SUCCESS !')", true);
+                DataTable dt = GetDuplicateNamePhoneEmail(txtFullname.Text, txtMobilePhone.Text, txtEmailAddress.Text);
+                if (dt.Rows.Count > 0)
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Halo, Anda sudah terdaftar sebagai peserta Rejoice. Silakan ajak teman-teman yang lain :)')", true);
+                }
+                else
+                {
+                    Int32 returnvalue = doInsertRegis(TicketNumber, txtFullname.Text, Convert.ToDateTime(txtDOB.Text), txtMobilePhone.Text, txtEmailAddress.Text, txtHomeAddress.Text, txtLineID.Text, gender, asalparoki);
+                    SendingEmail(TicketNumber, txtFullname.Text, txtEmailAddress.Text.ToString());
+                    Response.Redirect("Response.aspx", false);
+                }
             }
             catch (Exception ex)
             {
@@ -181,6 +187,24 @@ namespace OnlineRegistration_v2
             Int32 returnvalue = (Int32)returnparameter.Value;
 
             return returnvalue;
+        }
+
+        private static DataTable GetDuplicateNamePhoneEmail(String _fullname, String _mobilephone, String _email)
+        {
+            DataTable dt = new DataTable();
+
+            SqlConnection conn = new SqlConnection(ConnString("YnCDB_Connection"));
+            SqlCommand cmd = new SqlCommand("usp_CekDuplicateNameEmailPhone", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@FullName", _fullname);
+            cmd.Parameters.AddWithValue("@MobilePhone", _mobilephone);
+            cmd.Parameters.AddWithValue("@Email", _email);
+            conn.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            adapter.Fill(dt);
+            conn.Close();
+
+            return dt;
         }
 
         #endregion
